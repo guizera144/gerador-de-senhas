@@ -116,14 +116,15 @@ label {
     height: 20px;
     cursor: pointer;
 }
-
 .barra {
-    background-color: var(--fundo-senha);
+background-color: var(--fundo-senha);
     height: 30px;
     width: 100%;
-}
+}   border: 1px solid var(--borda)
 
-.forca {
+@media screen and (min-width: 768px) {
+.parametro-coluna__senha{ 
+}  flex-direction: row;
     height: 30px;
     position: relative;
     bottom: 30px;
@@ -131,11 +132,11 @@ label {
 
 .fraca {
     width: 25%;
-    background-color: #e71b1b;
+    background-color: #12a005;
 }
 
 .media {
-    background-color: #13ddd3;
+    background-color: #f8e005;
     width: 50%;
 }
 
