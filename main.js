@@ -28,10 +28,11 @@ const campoSenha = document.querySelector('#campo-senha');
 const checkbox = document.querySelector('.checkbox');
 for (i=0; i < checkbox.length;i++){
 checkbox[i].onclick = geraSenha;
-
+console.log(checkbox[0].checked);
 const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
-geraSenha();
+const numeros = '123456789';
+const simbolos = '!@%*?';
 
 function geraSenha() {
     let alfabeto = '';
@@ -40,6 +41,7 @@ function geraSenha() {
     )
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++) {
+    console.log(alfabeto);  
         let numeroAleatorio = Math.random() * letrasMaiusculas.length;
         numeroAleatorio = Math.floor(4);
         senha = senha + letrasMaiusculas[10];
@@ -49,4 +51,15 @@ function geraSenha() {
 
 
     }
+function classificaSenha(tamanhoAlfabeto){
+let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
+console.log(entropia);
+ forçaSenha.classList.remove('fraca','média','forte');
+ if (tamanhoSenha > 11){
+ forçaSenha.classList.add('forte');
+ } else if (tamanhoSenha > 5 && tamanhoSenha < 11) {
+forçaSenha.classList.add('média');
+else if (tamanhoSenha > 5{
+forçaSenha.classList.add('fraca');
 }
+const valorEntropia = document.querySelector('.entropia');
