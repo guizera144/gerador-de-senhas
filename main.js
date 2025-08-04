@@ -57,7 +57,7 @@ console.log(entropia);
  forçaSenha.classList.remove('fraca','média','forte');
  if (tamanhoSenha > 11){
  forçaSenha.classList.add('forte');
- } else if (tamanhoSenha > 5 && tamanhoSenha < 11) {
+ } else if (tamanhoSenha > 5 && tamanhoSenha < 57 ) {
 forçaSenha.classList.add('média');
 else if (tamanhoSenha > 5{
 forçaSenha.classList.add('fraca');
